@@ -1,2 +1,181 @@
 Module updates for Security and Risk Management module for Msc Cyber Security
   
+Module updates for Security and Risk Management module for Msc Cyber Security
+  <!DOCTYPE html>
+<html>
+<head> Security and Risk Management Module
+    <title>Security and Risk Management Module </title>
+</head> Week 1
+
+<body>
+    <h1>Notes -unit2 </h1>
+    <p>USER PARTICIPATION IN INFORMATION SYSTEMS
+        SECURITY RISK MANAGEMENT1- Spears, J. & Barki, H. (2010)
+        
+        Notes:
+        Spears, J. & Barki, H. (2010) User Participation in Information Systems Security Risk Management. MIS Quarterly 34(3): 503.
+        user participation: - 3 therories: - buy-in , system quality and emergent interactions
+        Buy-in- the more participation ,users perceive the system as more relevant and important.
+        users participate in ISD - system developers get more informed on business needs and results in higher quality
+        Relationships are built between users and IS professionals 
+        Tables are needed to help  develop qualitative analysis models.
+        It is best to implement security controls into processes.
+        User participation in SRM raises organistional awareness of IS security risk and controls.
+         User participation contributes to an alignment between SRM and the business context
+         User participation contributes to perceived improvements in control development
+         Organizational awareness of SRM within a business process contributes to perceived
+        improvements in control development for controls within that business process.
+        User participation positively influences the performance of security controls.
+        
+        Renn, O., Beier, G. and Schweizer, P.-J. (2021) The opportunities and risks of digitalisation for sustainable development: a systemic perspective. GAIA - Ecological Perspectives for Science and Society, 30(1), pp.23–28.
+        
+        - The systemic risks perspective integrates knowledge on technological flexibility, economic organisa tional forms, regulatory parameters, and social or individual behaviour (Renn et al. 2020).
+        The three main objectives of ecological sustainability are decarbonisation, dematerialisation and renaturalisation.
+        . A comprehensive circular econ omy necessitates digi -
+        tal services. Whenever waste from one sector is used as input
+        material for another, complex and dynamic logistics are essen tial.
+        
+        electronic waste and the industry-supported built-in obsolescence of devices (especially
+        smartphones) are diametrically opposed to the concept of a circular economy (Benton et al. 2015) issue concentration of economic power to current leaders in manufacturing in ICT.
+        s. Digitalisation can be a powerful tool for oppression as
+        well as liberation.
+        </p>
+        <h1>Notes -unit 4</h1>
+</body>STRIDE:
+Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege
+Windows includes a winsock.dll. You should be able to ask the operating system to act as a mediating authority and get you to winsock
+
+Threat Examples	        What the Attacker Does	                        Notes
+Spoofing a process on the same machine
+			Creates a file before the real process	
+Renaming/linking	Creating a Trojan “su” and altering the path
+Renaming		Naming your process “sshd”
+Spoofing a file	Creates a file in the local directory	This can be a library, executable, or config file.
+Creates a link and changes it	From the attacker's perspective, the change should happen between the link being checked and the link being accessed.
+Creates many files in the expected directory	Automation makes it easy to create 10,000 files in /tmp, to fill the space of files called /tmp /′pid.NNNN, or similar.
+Spoofing a machine	ARP spoofing	
+IP spoofing	
+DNS spoofing	Forward or reverse
+DNS Compromise	Compromise TLD, registrar or DNS operator
+IP redirection	At the switch or router level
+Spoofing a person	Sets e-mail display name	
+Takes over a real account	
+Spoofing a role	Declares themselves to be that role	Sometimes opening a special account with a relevant name
+
+Threat Examples	What the Attacker Does	Notes
+Tampering with a file	Modifies a file they own and on which you rely	
+Modifies a file you own	
+Modifies a file on a file server that you own	
+Modifies a file on their file server	Loads of fun when you include files from remote domains
+Modifies a file on their file server	Ever notice how much XML includes remote schemas?
+Modifies links or redirects	
+Tampering with memory	Modifies your code	Hard to defend against once the attacker is running code as the same user
+Modifies data they've supplied to your API	Pass by value, not by reference when crossing a trust boundary
+Tampering with a network	Redirects the flow of data to their machine	Often stage 1 of tampering
+Modifies data flowing over the network	Even easier and more fun when the network is wireless (WiFi, 3G, et cetera)
+Enhances spoofing attacks	
+
+Tampering with Memory
+Attackers can modify your code if they're running at the same privilege level. At that point, defense is tricky. If your API handles data by reference (a pattern often chosen for speed), then an attacker can modify it after you perform security checks.
+
+Threat Examples	What the Attacker Does	Notes
+Repudiating an action	Claims to have not clicked	Maybe they really did
+Claims to have not received	Receipt can be strange; does mail being downloaded by your phone mean you've read it? Did a network proxy pre-fetch images? Did someone leave a package on the porch?
+Claims to have been a fraud victim	
+Uses someone else's account	
+Uses someone else's payment instrument without authorization	
+Attacking the logs	Notices you have no logs	
+Puts attacks in the logs to confuse logs, log-reading code, or a person reading the logs.
+
+Threat Examples	What the Attacker Does	Notes
+Information disclosure against a process	Extracts secrets from error messages	
+Reads the error messages from username/passwords to entire database tables
+Extracts machine secrets from error cases	Can make defense against memory corruption such as ASLR far less useful
+Extracts business/personal secrets from error cases	
+Information disclosure against data stores	Takes advantage of inappropriate or missing ACLs	
+Takes advantage of bad database permissions	
+Finds files protected by obscurity
+
+
+
+2)Attack Tree
+3)Attack Libraries- Capec , Owasp
+The CAPEC is MITRE's Common Attack Pattern Enumeration and Classification. As of this writing, it is a highly structured set of 476 attack patterns, organized into 15 groups:
+
+Data Leakage
+Attacks Resource Depletion
+Injection (Injecting Control Plane content through the Data Plane)
+Spoofing
+Time and State Attacks
+Abuse of Functionality
+Probabilistic Techniques
+Exploitation of Authentication
+Exploitation of Privilege/Trust
+Data Structure Attacks
+Resource Manipulation
+Network Reconnaissance
+Social Engineering Attacks
+Physical Security Attacks
+Supply Chain Attacks
+Each of these groups cont
+
+OWASP Top Ten
+OWASP, The Open Web Application Security Project, offers a Top Ten Risks list each year. In 2013, the list was as follows:
+
+Injection
+Broken Authentication and Session Management
+Cross-Site Scripting
+Insecure Direct Object References
+Security Misconfiguration
+Sensitive Data Exposure
+Missing Function Level Access Control
+Cross Site Request Forgery
+Components with Known Vulnerabilities
+Invalidated Requests and Forwards [sic]
+
+University of Waterloo professor Ian Goldberg has defined a measurement he calls nymity, the “amount of information about the identity of the participants that is revealed [in a transaction].” Nymity is from the Latin for name, from which anonymous (“without a name”) and pseudonym (“like a name”) are derived.
+
+ 
+
+Linkability as a concept relates closely to Solove's concept of identification and aggregation. Linkability can be seen as a spectrum from strongly linkable with multiple validated identifiers to weakly linkable based on similarities in the data.
+Contextual Integrity Decision Heuristic
+Nissenbaum first presents contextual integrity as a post-incident analytic tool. The essence of this is to document the context as follows:
+
+Establish the prevailing context.
+Establish key actors.
+Ascertain what attributes are affected.
+Establish changes in principles of transmission.
+Red flag
+
+Step 5 means “if the new practice generates changes in actors, attributes, or transmission principles, the practice is flagged as violating entrenched informational norms and constitutes a prima facie violation of contextual integrity.” 
+
+Nissenbaum also presents a longer, ‘augmented’ heuristic, which is more prescriptive about steps, and may work better to predict privacy issues.
+
+Describe the new practice in terms of information flows.
+Identify the prevailing context.
+Identify information subjects, senders, and recipients.
+Identify transmission principles.
+Locate applicable norms, identify significant changes.
+Prima facie assessment
+Evaluation
+Consider moral and political factors.
+Identify threats to autonomy and freedom.
+Identify effects on power structures.
+Identify implications for justice, fairness, equality, social hierarchy, democracy and so on.
+Evaluation 2
+Ask how the system directly impinges on the values, goals, and ends of the context.
+Consider moral and ethical factors in light of the context.
+Decide.
+
+LUNDDUN is a mnemonic developed by Mina Deng for her PhD at the Katholieke Universiteit in Leuven, Belgium (Deng, 2010). LINDDUN is an explicit mirroring of STRIDE-per-element threat modeling. It stands for the following violations of privacy properties:
+
+Linkability
+Identifiability
+Non-Repudiation
+Detectability
+Disclosure of information
+Content Unawareness
+Policy and consent Noncompliance
+
+IETF -privacy policy:
+</html>
